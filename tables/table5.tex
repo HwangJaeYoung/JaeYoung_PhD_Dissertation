@@ -1,0 +1,39 @@
+\def\doitems{\def\item{\par
+   \noindent\hbox to 2.3em{\hss$\bullet$\hss}\hangindent=2.3em }}
+
+\begin{table*}[ht]
+  \renewcommand{\arraystretch}{1.5}
+  \scriptsize
+
+  \begin{tabular}{p{1.2cm}p{3.2cm}p{3.2cm}p{3.2cm}}
+    \hline
+      \centering Test Type & \centering Traditional testing & \centering IoT-TaaS & \hspace{1.5cm} Benefits \\
+    \hline
+    
+    \centering Interoperability & 
+    \doitems   
+        \item Local Connection
+        \item Centralized Testing Spot &
+    \doitems   
+        \item Remote Connection
+        \item Distributed Testing Spot &
+    \doitems   
+        \item  Location independent
+        \item  Cost-Effective, Easy to test with other IoT systems remotely \\
+        
+    \hline
+    \centering Conformance & 
+    \doitems   
+        \item Fixed Protocol Support 
+        \item Manual Testing &
+    \doitems   
+        \item Extensible Protocol Support
+        \item Automatic Testing &
+    \doitems   
+        \item Testing Variety of Apps
+        \item Cost-Effective, Rapid Testing \\
+    \hline
+  \end{tabular}
+  \caption{Comparison between traditional software testing and IoT-TaaS}
+  \label{tab:iot_taas_comparison}
+\end{table*}

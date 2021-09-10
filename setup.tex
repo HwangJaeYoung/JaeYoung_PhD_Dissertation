@@ -1,0 +1,21 @@
+\setlength{\parindent}{2em}							% Set space between paragraphs
+\setlength{\parskip}{1em}							% Set paragraph indentation
+
+\tolerance=1										% Justify with no hyphenation
+\emergencystretch=\maxdimen							% Justify with no hyphenation
+\hyphenpenalty=10000								% Justify with no hyphenation
+\hbadness=10000										% Justify with no hyphenation
+
+\renewcommand{\refname}{REFERNCES}					% Change name of the references section 
+
+\captionsetup{labelfont=bf}							% Set labels to boldface in caption
+\renewcommand{\figurename}{Fig.}					% Change figure label in caption
+\renewcommand{\cftfigfont}{Fig.\ }					% Figure label in lof
+\renewcommand{\cfttabfont}{Table\ }					% Table label in lot
+
+\newlength{\mylenf}									% Setup space between label and caption in loft
+\settowidth{\mylenf}{\cftfigpresnum}				% Setup space between label and caption in loft
+\setlength{\cftfignumwidth}{\dimexpr\mylenf+1.5em}	% Setup space between label and caption in loft
+\setlength{\cfttabnumwidth}{\dimexpr\mylenf+1.5em}	% Setup space between label and caption in loft
+
+\setlength{\glsdescwidth}{0.9\hsize}				% Set length of glossary line

@@ -1,0 +1,31 @@
+\begin{table}[ht]
+\setlength{\tabcolsep}{3pt}
+
+\begin{center}
+\begin{tabular}{|p{3.7cm}|p{8cm}|}
+\hline 
+\centering Services & \hspace{3.3cm}Description\\
+\hline
+
+\centering  getLastObservations & This service provides the latest values of a specific Sensor list in an FIESTA-IoT \\
+\hline
+
+\centering  getObservations & This service provides the values of a specific Sensor list for a specific time-period in an FIESTA-IoT \\
+\hline
+
+\centering  pushLastObservations & This service initiates a stream at the Testbed side which pushes
+continuously the latest values of a specific Sensor \\
+\hline
+
+\centering  pushSingleObservation & This service pushes continuously the latest value of a specific Sensor \\
+\hline
+
+\centering  stopPushOfObservations & This service stops the push of observations initiated by the
+“pushLastObservations” and “pushSingleObservation” \\
+\hline
+
+\end{tabular}
+\end{center}
+\caption{Testbed Provider Services (TPS)}
+\label{tab:fiesta_iot_tps_api}
+\end{table}

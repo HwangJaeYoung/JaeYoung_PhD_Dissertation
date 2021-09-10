@@ -1,0 +1,68 @@
+\usepackage[utf8]{inputenc}       		% For setting encoding
+\usepackage[margin=1in]{geometry}		% For setting page margins
+\usepackage{booktabs}             		% For table rules
+\usepackage{graphicx}             		% For adding figures
+\usepackage{float}                		% For floating environment
+\usepackage{longtable}            		% For long tables
+\usepackage{caption}              		% For custom captions 
+\usepackage[subfigure]{tocloft}			% For changing labels in lof and lot
+\usepackage{subfigure}					% For loading toc and lof in sub-figure mode
+%\usepackage[superscript]{cite}			% For citation style to superscript
+\usepackage[acronym,toc]{glossaries}	% For making glossaries
+\usepackage[doublespacing]{setspace}	% For setting line spacing
+\usepackage{times}						% For using times font
+\usepackage{kotex}						% For using Korean text
+\usepackage{lipsum}						% For using random text
+\usepackage{todonotes}					% For adding to-do notes
+%\usepackage{hyperref}					% For cross-referencing
+%\usepackage[style=numeric-comp, style=ieee]{biblatex}
+\usepackage[backend=bibtex8, style=ieee]{biblatex}
+\usepackage{soul}
+\usepackage{tikz}
+\usepackage{adjustbox}
+\usepackage{listings}
+\usepackage{threeparttable}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{makecell}
+\usepackage{courier}
+\usepackage{rotating}
+\addbibresource{references.bib}
+
+\colorlet{punct}{red!60!black}
+\definecolor{background}{HTML}{EEEEEE}
+\definecolor{delim}{RGB}{20,105,176}
+\colorlet{numb}{magenta!60!black}
+
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+    
+    \lstdefinelanguage{json}{
+    basicstyle=\normalfont\texttt,
+    numbers=left,
+%     numberstyle=\scriptsize,
+    stepnumber=1,
+%     numbersep=8pt,
+    showstringspaces=false,
+    breaklines=true,
+    frame=lines,
+% 	xleftmargin=\parindent,
+    backgroundcolor=\xcolor{background},
+    literate=
+     *{0}{{{\color{numb}0}}}{1}
+      {1}{{{\color{numb}1}}}{1}
+      {2}{{{\color{numb}2}}}{1}
+      {3}{{{\color{numb}3}}}{1}
+      {4}{{{\color{numb}4}}}{1}
+      {5}{{{\color{numb}5}}}{1}
+      {6}{{{\color{numb}6}}}{1}
+      {7}{{{\color{numb}7}}}{1}
+      {8}{{{\color{numb}8}}}{1}
+      {9}{{{\color{numb}9}}}{1}
+      {:}{{{\color{punct}{:}}}}{1}
+      {,}{{{\color{punct}{,}}}}{1}
+      {\{}{{{\color{delim}{\{}}}}{1}
+      {\}}{{{\color{delim}{\}}}}}{1}
+      {[}{{{\color{delim}{[}}}}{1}
+      {]}{{{\color{delim}{]}}}}{1},
+}

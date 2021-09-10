@@ -1,0 +1,30 @@
+\begin{table}[ht]
+\setlength{\tabcolsep}{3pt}
+\begin{center}
+\begin{tabular}{|p{1.5cm}|p{2.4cm}|p{1cm}|p{2cm}|p{2cm}|p{2cm}|}
+\hline 
+\centering Testing Profile & \centering Operation & \centering Items & \centering Automated testing & \centering Hybrid testing & Manual testing \\
+
+\hline
+    \centering  \centering GEN & \centering CREATE    & \centering 6 & \centering 0.359 & \centering 11.3 & \hspace{0.4cm} 30.4 \\ 
+                               & \centering RETRIEVE  & \centering 6 & \centering 0.306 & \centering 12.7 & \hspace{0.4cm} 27.8 \\ 
+                               & \centering UPDATE    & \centering 6 & \centering 0.195 & \centering 9.4 & \hspace{0.4cm} 28.7 \\ 
+                               & \centering DELETE    & \centering 6 & \centering 0.261 & \centering 10.5 & \hspace{0.4cm} 29.6 \\
+\hline
+    \centering  \centering REG & \centering CREATE    & \centering 8 & \centering 0.466 & \centering 14.4 & \hspace{0.4cm} 31.4 \\ 
+                               & \centering DELETE    & \centering 1 & \centering 0.205 & \centering 3.5 & \hspace{0.4cm} 30.2 \\
+\hline
+    \centering  \centering DMR & \centering CREATE    & \centering 13 & \centering 0.782 & \centering 19.7 & \hspace{0.4cm} 54.2 \\ 
+                               & \centering RETRIEVE  & \centering 7 & \centering 0.267 & \centering 14.2 & \hspace{0.4cm} 27.8 \\ 
+                               & \centering UPDATE    & \centering 4 & \centering 0.117 & \centering 8.8 & \hspace{0.4cm} 21.5 \\ 
+                               & \centering DELETE    & \centering 3 & \centering 0.113 & \centering 9.4 & \hspace{0.4cm} 19.6 \\ 
+
+\hline                               
+\centering Total & \centering - & \centering 60 & \centering 3.071 (s) & \centering 113.9 (s) & \hspace{0.2cm}274.2 (s) \\
+                               
+\hline
+\end{tabular}
+\end{center}
+\caption{oneM2M IoT application conformance testing results with three approaches}
+\label{tab:testing_comparison}
+\end{table}

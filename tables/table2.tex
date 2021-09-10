@@ -1,0 +1,68 @@
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+\def\doitems{\def\item{\par
+   \noindent\hbox to 2.3em{\hss$\bullet$\hss}\hangindent=2.3em }}
+
+\begin{table*}[ht]
+  \renewcommand{\arraystretch}{1.5}
+  \scriptsize
+
+  \begin{tabular}{p{0.9cm}p{3.3cm}p{3.4cm}p{3.4cm}}
+    \hline
+      & \centering IWM-1 & \centering IWM-2 & \hspace{1.5cm} IWM-3 \\
+    \hline
+    
+    \centering Scalability & 
+    \doitems   
+        \item Pros: This is highly scalable if a single standard is mandated.
+        \item Cons: It is difficult to mandate that all cities follow the same standard. & 
+    \doitems   
+        \item Pros: Interconnected smart cities can easily be extended using PIC.
+        \item Cons: It is not easy to develop PIC for all standards. &
+    \doitems   
+        \item Pros: The use of semantics ensures scalability. 
+        \item Cons: It is difficult to develop annotators for all standards. \\
+        
+    \hline
+    \centering Complexity & 
+    \doitems   
+        \item Pros: A standard body only needs to define standardized mutual registration procedures. & 
+    \doitems   
+        \item Cons: As interworking cities grow, the complexity grows steeply. & 
+    \doitems   
+        \item Pros: Each city only needs to provide an annotator for the common ontology.
+        \item Cons: The common ontology can become complicated. \\
+        
+    \hline
+    \centering Data redundancy & 
+    \doitems   
+        \item Cons: All data on a platform should be replicated on a remote platform. & 
+    \doitems   
+        \item Pros: A platform only needs to have data that it interworks with. & 
+    \doitems   
+        \item Pros: The meta-cloud only needs to store the semantic description. 
+        \item Cons: All data should be annotated and stored in the meta-cloud. \\
+        
+    \hline
+    \centering Development effort \& cost & 
+    \doitems   
+        \item Platform developers take on a small burden. Application developers only need to use the standardized APIs. & 
+    \doitems   
+        \item Platform developers have to develop PICs while App developers just need to know their city APIs. & 
+    \doitems   
+        \item Each city platform owner has to develop annotators, while App developers only need to use given APIs. \\
+        
+    \hline
+    \centering {Privacy \& security} & 
+    \doitems   
+        \item Pros: High probability that two cities are using the
+                                       same security mechanism. & 
+    \doitems   
+        \item Cons: May need security mechanisms for secure interworking. & 
+    \doitems   
+        \item Cons: Additional common security mechanisms need to be defined. \\
+    \hline
+  \end{tabular}
+  \caption{Summary of IWM analysis}
+    \label{tab:iwm_model_evaluation}
+\end{table*}
